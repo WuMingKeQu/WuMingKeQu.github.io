@@ -25,5 +25,6 @@ plt.plot(x,y)
 
 plt.stem(x,y)
 plt.show()
+
 #运行结果
 ![](http://m.qpic.cn/psb?/V105YmJH2gZua8/zh3sIXREHiQO8cWd5KuoCFtWolSPq6Is.vSnVq3s*Gg!/b/dDUBAAAAAAAA&bo=gAfXAwAAAAADF2E!&rf=viewer_4)
