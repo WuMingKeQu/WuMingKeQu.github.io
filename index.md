@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+## 一般复指数序列
+#Python 代码：
 
-You can use the [editor on GitHub](https://github.com/WuMingKeQu/WuMingKeQu.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+import matplotlib.pyplot as plt
+import numpy as np
+plt.rcParams['font.sans-serif']=['SimHei']
+plt.rcParams['axes.unicode_minus']=False
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+x = np.linspace(0,5,50)
+aa = 0+3j
+bb = 0+x*2j
+y = (np.e**aa)*(np.e**bb)*1*2**x
+plt.subplot(1,2,1)
+plt.title(r'$x1[n]=|c||a|^n e^(j(ωn+θ)),ω=2,θ=3,|c|=1,|a|=2$')
+plt.plot(x,y)
+plt.stem(x,y)
 
-### Markdown
+x = np.linspace(0,5,50)
+cc =0+3j
+dd =0+x*2j
+y = (np.e**cc)*(np.e**dd)*1*(1/2)**x
+plt.subplot(1,2,2)
+plt.title(r'$x2[n]=|c||a|^n e^(j(ωn+θ)),ω=2,θ=3,|c|=1,|a|=0.5$')
+plt.plot(x,y)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/WuMingKeQu/WuMingKeQu.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+plt.stem(x,y)
+plt.show()
